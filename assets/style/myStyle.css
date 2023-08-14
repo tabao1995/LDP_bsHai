@@ -1,0 +1,77 @@
+:root {
+  --bluecolor: #0a315c;
+  --blackcolor: #30374b;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+.fullwidth-section {
+  width: 100%;
+}
+.header-section,
+.section {
+  width: 90%;
+  margin: auto;
+}
+.section {
+  padding: 60px 0;
+}
+.section1 {
+  background-color: var(--bluecolor);
+}
+.section1 .header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.section1 .section1__infor {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.section1 .section1__infor span {
+  color: #fff;
+}
+.section1 .section1__dangky a {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #e3a829;
+  color: #000;
+  text-decoration: none;
+}
+.section2 {
+  background-image: url(/assets/image/banner\ web\ 1\ 1.png);
+  background-size: contain;
+  aspect-ratio: 3/1;
+}
+.section3 .section h2,
+.section3 .section h3 {
+  text-align: center;
+  color: var(--bluecolor);
+  text-transform: uppercase;
+}
+.section3__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 50px;
+}
+.section3__content__item {
+  text-align: center;
+  border: var(--bluecolor) 1px solid;
+  border-radius: 8px;
+  padding: 50px;
+}
+.section3__content__item img {
+    aspect-ratio: 250 /160;
+    padding-bottom: 50px;
+}
