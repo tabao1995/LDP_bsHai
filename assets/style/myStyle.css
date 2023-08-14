@@ -1,6 +1,7 @@
 :root {
   --bluecolor: #0a315c;
   --blackcolor: #30374b;
+  --buttoncolor: #e3a829
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
 * {
@@ -11,6 +12,12 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.width50{
+    width: 50%;
 }
 .fullwidth-section {
   width: 100%;
@@ -45,15 +52,15 @@ h3 {
   padding: 12px 20px;
   border-radius: 12px;
   background-color: #e3a829;
-  color: #000;
+  color: var(--blackcolor);
   text-decoration: none;
 }
 .section2 {
-  background-image: url(/assets/image/banner\ web\ 1\ 1.png);
+    background-image: url(/assets/image/banner1.png);
   background-size: contain;
   aspect-ratio: 3/1;
 }
-.section3 .section h2,
+.section h2,
 .section3 .section h3 {
   text-align: center;
   color: var(--bluecolor);
@@ -72,6 +79,54 @@ h3 {
   padding: 50px;
 }
 .section3__content__item img {
-    aspect-ratio: 250 /160;
-    padding-bottom: 50px;
+  aspect-ratio: 250 /160;
+  padding-bottom: 50px;
+}
+.section4 .fullwidth-section {
+    background-image: url(/assets/image/banner2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 3/1;
+  padding: 40px 0;
+}
+.section5.fullwidth-section{
+    background-image: url(/assets/image/banner3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 3/1;
+    padding: 40px 0;
+}
+.section6.fullwidth-section{
+    background-image: url(/assets/image/Banner4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1200/358;
+    padding: 40px 0;
+}
+.section6 .section{
+    display: flex;
+}
+.section6 .section .width50{
+    margin: 0 10%;
+}
+.section6 .section h2{
+    color: #fff ;
+    text-align: center;
+    padding-bottom: 28px;
+    
+}
+.section6 .section form{
+    display: flex;
+    flex-direction: column;
+}
+.section6 .section input{
+    padding: 12px;
+    margin-bottom: 28px;
+    font-size: 20px; 
+}
+.section6 .section input.button{
+    background-color: var(--buttoncolor);
+    outline: none;
+    color: #fff;
+    
 }
