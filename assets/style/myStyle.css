@@ -14,6 +14,7 @@ h3 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  color: var(--bluecolor);
 }
 
 .width50{
@@ -100,7 +101,7 @@ h3 {
     background-image: url(/assets/image/Banner4.png);
     background-size: contain;
     background-repeat: no-repeat;
-    aspect-ratio: 1200/358;
+    background-position: left center;
     padding: 40px 0;
 }
 .section6 .section{
@@ -129,4 +130,115 @@ h3 {
     outline: none;
     color: #fff;
     
+}
+.section7 h2{
+  color: var(--bluecolor);
+}
+.section7__table table {
+    margin: auto;
+    border-spacing: 0;
+   border-color: var(--bluecolor);
+   width: 70%;
+   background-image: url(/assets/image/ss_1660780489@3x@3x\ 2.png);
+   background-repeat: no-repeat;
+  background-position: center center;
+}
+ .section7__table td, .section7__table tr {
+padding:  20px;
+} 
+.section8__towline{
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+.section8__towline::after{
+  content: "";
+  position: absolute;
+  border-top:32px solid var(--bluecolor);
+  border-left: 32px solid transparent ;
+  border-right: 32px solid transparent ;
+  bottom: -20px;
+  left: calc(50% - 32px);
+}
+.section8__towline span {
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: var(--bluecolor);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--bluecolor) ;
+  border-top: 1px solid var(--bluecolor) ;
+}
+.section8_4icon{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section8_4icon__item {
+  text-align: center;
+  line-height: 1.5em;
+}
+.section9{
+  background-image: url(/assets/image/Frame\ 482002\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1200/338;
+}
+.section12{
+  background-color: var(--bluecolor);
+}
+.section12 .section h2{
+  color: #fff;
+}
+.section12__3option{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10%
+}
+.section12__3option__item{
+    padding: 28px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.section12__3option__item span{
+  color: var(--buttoncolor);
+  font-size: 54px;
+  font-family: "Sarabun", sans-serif;
+}
+.section12__3option__item p{
+  color: var(--blackcolor);
+}
+.section13{
+  text-align: center  ;
+}
+.section13__review__item{
+  position: relative;
+  
+}
+.section13__review__item::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 46px;
+  width: 46px;
+  background-image: url("/assets/image/reviewquote.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section13__review__item__top{
+  display: flex;
+  padding-left: 46px;
+  padding-right: 40px;
+  padding-bottom: 12px;
+}
+.section13__review__item__top__content p,.section13__review__item__top__content img{
+  padding: 10px 8px;
+}
+.section13__review__item__bottom{
+  padding-left: 46px;
+  padding-right: 40px;
+  
 }
