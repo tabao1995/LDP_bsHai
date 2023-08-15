@@ -60,7 +60,6 @@ h3 {
   text-decoration: none;
 }
 .section2 {
-  background-image: url(/assets/image/Banner\ web\ 6.png);
   background-size: contain;
   aspect-ratio: 3/1;
 }
@@ -153,15 +152,7 @@ h3 {
   padding: 30px;
   position: relative;
 }
-.section8__towline::after {
-  content: "";
-  position: absolute;
-  border-top: 32px solid var(--bluecolor);
-  border-left: 32px solid transparent;
-  border-right: 32px solid transparent;
-  bottom: -20px;
-  left: calc(50% - 32px);
-}
+
 .section8__towline span {
   padding: 10px 0;
   font-size: 24px;
@@ -181,6 +172,12 @@ h3 {
   text-align: center;
   line-height: 1.5em;
 }
+.section8_4icon__item img{
+  transition: all 1s ease;
+}
+.section8_4icon__item img:hover{
+  transform: rotateY(360deg);
+}
 .section9 {
   background-image: url(/assets/image/Banner\ 4.png);
   background-size: contain;
@@ -191,31 +188,26 @@ h3 {
   display: flex;
 }
 .section10 .section >.width50{
-  display: flex
-}
-.section10 .section .width50 .img img{
-  width: 100%;
-  aspect-ratio: 188/350;
-  transition: all 500ms ease;
-}
-.section10 .section .width50 .img img:hover{
-  transform: scale(1.1);
-}
-.section10 .section .width50 .content{
-  display: flex;
+  display: flex ;
+  width: calc(100% / 3);
   flex-direction: column;
-  align-items: first baseline;
-
+  justify-content: space-evenly;
 }
-.section10 .section .width50 .content > *.onhover{
-  font-size: 20px;
+.section10 .section >.width50.img{
+  position: relative;
+  
 }
-
-.section10 .section .width50 .content > *{
-  height: 27%;
-  font-size: 16px;
-  padding: 0 12px;
-  transition: all 500ms ease ;
+.section10 .section >.width50.img img{
+  transition: all 1s ease;
+}
+.section10 .section .width50.img .sure-smile{
+  
+}
+.section10 .section >.width50 .sure-smile {
+width:100%;
+top: 0  ;
+right: 0;
+position: absolute;
 
 }
 .section12 {
