@@ -60,7 +60,7 @@ h3 {
   text-decoration: none;
 }
 .section2 {
-  background-image: url(/assets/image/banner1.png);
+  background-image: url(/assets/image/Banner\ web\ 6.png);
   background-size: contain;
   aspect-ratio: 3/1;
 }
@@ -87,14 +87,14 @@ h3 {
   padding-bottom: 50px;
 }
 .section4 .fullwidth-section {
-  background-image: url(/assets/image/banner2.png);
+  background-image: url(/assets/image/banner\ web\ 2.png);
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 3/1;
   padding: 40px 0;
 }
 .section5.fullwidth-section {
-  background-image: url(/assets/image/banner3.png);
+  background-image: url(/assets/image/banner\ web\ 3.png);
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 3/1;
@@ -182,7 +182,7 @@ h3 {
   line-height: 1.5em;
 }
 .section9 {
-  background-image: url(/assets/image/Frame\ 482002\ 1.png);
+  background-image: url(/assets/image/Banner\ 4.png);
   background-size: contain;
   background-repeat: no-repeat;
   aspect-ratio: 1200/338;
@@ -332,7 +332,7 @@ h3 {
 .submit-button {
   width: 50%;
   margin: 0 auto;
-  background-color: #007bff;
+  background-color: var(--buttoncolor);
   color: white;
   border: none;
   padding: 10px;
