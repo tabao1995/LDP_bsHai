@@ -1,10 +1,12 @@
 $(document).ready(function () {
   $(".slick.khay").slick({
-    slidesPerRow: 1,
+    slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     infinite: true,
-    dots: true,
+    dots: false,
+    fade: true,
+    cssEase: "linear",
   });
   $(".section11__chungnhan").slick({
     slidesToShow: 4,
