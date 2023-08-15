@@ -4,6 +4,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
+    dots: true,
   });
   $(".section11__chungnhan").slick({
     slidesToShow: 4,
