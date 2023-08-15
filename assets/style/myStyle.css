@@ -199,7 +199,7 @@ h3 {
   transition: all 500ms ease;
 }
 .section10 .section .width50 .img img:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .section10 .section .width50 .content{
   display: flex;
@@ -245,6 +245,9 @@ h3 {
 }
 .section13 {
   text-align: center;
+}
+.section13 .section:first-child img:hover{
+  animation: puppung 1s infinite ;
 }
 .section13__review__item {
   position: relative;
@@ -306,7 +309,7 @@ h3 {
   text-transform: uppercase;
 } */
 .section15 {
-  padding: 80px;
+  padding: 80px 0;
   background-image: url(/assets/image/form-bg.png);
   background-size: cover;
   
@@ -410,4 +413,15 @@ footer a {
 footer .footer-bottom p {
   text-align: center;
   padding: 20px;
+}
+@keyframes puppung {
+  100% {
+    transform: scale(1.2);
+  } 50%{
+    transform: scale(0.8);
+  }
+  0%{
+    transform: scale(1.2);
+
+  }
 }
