@@ -20,4 +20,30 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
   });
+  $(".width50 .img1").on("mouseover", function () {
+    let a = $(".width50 .content1 > *");
+    for (let i = 0; i < a.length; i++) {
+      console.log(a[i]);
+      setTimeout(function () {
+        $(a[i]).addClass("onhover");
+      }, 500);
+    }
+  });
+  $(".width50 .img1").on("mouseout", function () {
+    let a = $(".width50 .content1 > *");
+    a.removeClass("onhover");
+  });
+  $(".width50 .img2").on("mouseover", function () {
+    let a = $(".width50 .content2 > *");
+    for (let i = 0; i < a.length; i++) {
+      console.log(a[i]);
+      setTimeout(function () {
+        $(a[i]).addClass("onhover");
+      }, 200);
+    }
+  });
+  $(".width50 .img2").on("mouseout", function () {
+    let a = $(".width50 .content2 > *");
+    a.removeClass("onhover");
+  });
 });
