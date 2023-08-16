@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  $(".section3__content").slick({
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    infinite: true,
+  });
   $(".slick.khay").slick({
     slidesToShow: 1,
     autoplay: true,
@@ -28,7 +35,10 @@ $(document).ready(function () {
     "clip : rect( 0 ," + width / 2 + "px," + width + "px,0)"
   );
   $(".width50 .Invisalign").on("mouseover", function () {
-    $(".width50 .sure-smile").attr("style", "clip : rect( 0 ,0 ,"+ width+"px,0)");
+    $(".width50 .sure-smile").attr(
+      "style",
+      "clip : rect( 0 ,0 ," + width + "px,0)"
+    );
   });
   $(".width50 .Invisalign").on("mouseout", function () {
     $(".width50 .sure-smile").attr(
