@@ -560,6 +560,9 @@ footer .footer-bottom p {
     width: 1000%;
     padding: 10px  0;
   }
+  .block{
+    display: block!important;
+  }
   #contact-form .section.width50 {
     display: none;
   }
