@@ -78,38 +78,56 @@ $(document).ready(function () {
       },
     ],
   });
-  
-  let width = $(".width50.img").width();
-  let height = $(".width50.img").height();
+  let windowWidth = $(window).width();
+  if ($(window).width() < 1024) {
+    $(".width50 .sure-smile").on("click", function () {
+      $(".width50.content").removeClass("block");
+      $(".width50.content1").addClass("block");
+      setTimeout(() => {
+        $(".width50.content1").css("left", "0");
+      }, 500);
+    });
+    $(".width50 .Invisalign").on("click", function () {
+      $(".width50.content").removeClass("block");
+      $(".width50.content2").addClass("block");
+      setTimeout(() => {
+        $(".width50.content2").css("right", "0");
+      }, 500);
+    });
+  }
+
+  let width = $(".width50.img .sure-smile ").width();
+  let height = $(".width50.img .sure-smile").height();
   console.log(height, width);
   $(".width50 .sure-smile").attr(
     "style",
-    "clip : rect( 0 ," + width / 2 + "px," + width + "px,0)"
+    "clip : rect( 0 ," + width / 2 + "px," + height + "px,0)"
   );
   $(".width50 .Invisalign").on("mouseover", function () {
     $(".width50 .sure-smile").attr(
       "style",
-      "clip : rect( 0 ,0 ," + width + "px,0)"
+      "clip : rect( 0 ,0 ," + height + "px,0)"
     );
   });
   $(".width50 .Invisalign").on("mouseout", function () {
     $(".width50 .sure-smile").attr(
       "style",
-      "clip : rect( 0 ," + width / 2 + "px," + width + "px,0)"
+      "clip : rect( 0 ," + width / 2 + "px," + height + "px,0)"
     );
   });
   $(".width50 .sure-smile").on("mouseover", function () {
     $(".width50 .sure-smile").attr(
       "style",
-      "clip : rect( 0 ," + width + "px," + width + "px,0)"
+      "clip : rect( 0 ," + width + "px," + height + "px,0)"
     );
   });
   $(".width50 .sure-smile").on("mouseout", function () {
     $(".width50 .sure-smile").attr(
       "style",
-      "clip : rect( 0 ," + width / 2 + "px," + width + "px,0)"
+      "clip : rect( 0 ," + width / 2 + "px," + height + "px,0)"
     );
   });
+
   var startDate = new Date();
   var endDate = new Date();
   endDate.setDate(startDate.getDate() + 10);

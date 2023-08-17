@@ -513,12 +513,27 @@ footer .footer-bottom p {
   }
   .section10 .section:nth-child(2){
     padding: 0;
-    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+   
+  }
+  .block{
+    display: flex!important;
   }
   .section10 .section >.width50{
-    margin: auto;
-    width: 70%;
-    gap:30px
+    width: 50%;
+    gap:30px;
+    transition:all  1s ease ;
+  }
+  .section10 .section >.width50.content{
+    display: none;
+    position: relative;
+  }
+  .section10 .section >.width50.content1{
+    left: -1000px;
+  }
+  .section10 .section >.width50.content2{
+    right: -1000px;
   }
   .section11__chungnhan img {
     margin: auto;
