@@ -78,7 +78,6 @@ $(document).ready(function () {
       },
     ],
   });
-  let windowWidth = $(window).width();
   if ($(window).width() < 1024) {
     $(".width50 .sure-smile").on("click", function () {
       $(".width50.content").removeClass("block");
@@ -93,6 +92,16 @@ $(document).ready(function () {
       setTimeout(() => {
         $(".width50.content2").css("right", "0");
       }, 500);
+    });
+    $(document).on("click", function (event) {
+      if (
+        !$(event.target).closest(".width50 .sure-smile, .width50 .Invisalign")
+          .length
+      ) {
+        $(".width50.content").removeClass("block");
+        $(".width50.content1").css("left", "-1000px");
+        $(".width50.content2").css("right", "-1000px");
+      }
     });
   }
 

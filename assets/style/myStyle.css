@@ -560,8 +560,21 @@ footer .footer-bottom p {
     width: 1000%;
     padding: 10px  0;
   }
+  .section10 .section >.width50{
+    width: 50%;
+  }
+  .section10 .section >.width50.content img{
+    width: 100%;
+  }
+  .section10 .section >.width50.content{
+    font-size: 12px;
+  }
   .block{
     display: block!important;
+  }
+  .section15__form.width50 {
+    width: 90%;
+    margin: auto;
   }
   #contact-form .section.width50 {
     display: none;
