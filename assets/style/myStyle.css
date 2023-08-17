@@ -505,8 +505,19 @@ footer .footer-bottom p {
     bottom: 30px;
     right:30px  
   }
+  .section6__content img{
+    width: 150px;
+    padding-top: 10px;
+  }
+  .section6__content a{
+    padding: 10px 50px;
+    font-size: 14px;
+  }
   .section7__table table{
     width: 100%;
+  }
+  .section8__towline span{
+    font-size: 18px;
   }
 .section8_4icon {
   grid-template-columns: 1fr 1fr;
@@ -556,9 +567,26 @@ footer .footer-bottom p {
   }
 }
 @media screen and (max-width:768px) {
+  *{
+    font-size: 12px; 
+  }
+  h2{
+    font-size: 20px;
+  }
   footer .footer-top .section-withlogo , footer .footer-top .section-withoutlogo  {
     width: 1000%;
     padding: 10px  0;
+  }
+  .section6__content img{
+    width: 120px;
+    padding-top: 10px;
+  }
+  .section6__content a{
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  .section8__towline span{
+    font-size: 14px;
   }
   .section10 .section >.width50{
     width: 50%;
