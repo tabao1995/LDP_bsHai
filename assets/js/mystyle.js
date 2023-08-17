@@ -1,5 +1,11 @@
 $(document).ready(function () {
   $(".section2").attr("style", "margin-top:" + $(".section1").height() + "px");
+  $(window).on("resize", () => {
+    $(".section2").attr(
+      "style",
+      "margin-top:" + $(".section1").height() + "px"
+    );
+  });
   $(".section3__content").slick({
     slidesToShow: 3,
     autoplay: true,
@@ -31,21 +37,51 @@ $(document).ready(function () {
     cssEase: "linear",
   });
   $(".section11__chungnhan").slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   $(".section13__review").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
-
+  
   let width = $(".width50.img").width();
-  console.log(width);
+  let height = $(".width50.img").height();
+  console.log(height, width);
   $(".width50 .sure-smile").attr(
     "style",
     "clip : rect( 0 ," + width / 2 + "px," + width + "px,0)"
