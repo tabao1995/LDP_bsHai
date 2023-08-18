@@ -20,22 +20,7 @@ $(document).ready(function () {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
-  });
-  $(".slick.khay").slick({
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-    dots: false,
-    fade: true,
-    cssEase: "linear",
   });
   $(".section11__chungnhan").slick({
     slidesToShow: 3,
@@ -51,19 +36,16 @@ $(document).ready(function () {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
   });
   $(".section13__review").slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,

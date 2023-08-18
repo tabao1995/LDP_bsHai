@@ -113,13 +113,13 @@ width: 100%;
   background-image: url(/assets/image/banner\ web\ 2\ 3@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
-  aspect-ratio: 3/1;
+  aspect-ratio: 1200/324;
 }
 .section5__banner.fullwidth-section {
   background-image: url(/assets/image/banner\ web\ 3\ 5\ \(1\).png);
   background-size: contain;
   background-repeat: no-repeat;
-  aspect-ratio: 3/1;
+  aspect-ratio: 1200/324;
   padding-bottom: 60px;
 }
 .section6.fullwidth-section {
@@ -283,7 +283,6 @@ position: absolute;
 }
 .section13__review__item {
   position: relative;
-  border: 1px solid rgba(0, 71, 147, 1);
   padding: 20px;
   margin: 32px;
   border-radius: 12px;
@@ -298,6 +297,9 @@ position: absolute;
 .section13__review__item__top__content img {
   padding: 10px 8px;
   font-size: 18px;
+}
+.section13__review__item__top__img img {
+  border-radius: 50%;
 }
 .section13__review__item__bottom {
 }
@@ -553,7 +555,11 @@ footer .footer-bottom p {
   grid-template-columns: 1fr;
   gap:30px;
 }
-
+.section13__review__item__top{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   .section13_img img{
     width: 100%;
   }
@@ -570,12 +576,20 @@ footer .footer-bottom p {
   *{
     font-size: 12px; 
   }
+  .section {
+    padding: 20px;
+
+  }
   h2{
-    font-size: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
   }
   footer .footer-top .section-withlogo , footer .footer-top .section-withoutlogo  {
     width: 1000%;
     padding: 10px  0;
+  }
+  .section3__content__item img{
+    width: 50%;
   }
   .section6__content img{
     width: 120px;
@@ -597,6 +611,12 @@ footer .footer-bottom p {
   .section10 .section >.width50.content{
     font-size: 10px;
   }
+  .section13__review__item{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
   .block{
     display: block!important;
   }
@@ -618,4 +638,18 @@ footer .footer-bottom p {
     transform: scale(1.2);
 
   }
+}
+@keyframes sliderrr {
+  100% {
+    right:0
+  }
+  50% {
+    right:100%
+  }
+  0%{
+    right: 0;
+  }
+}
+.try img{
+  animation: sliderrr 10000ms infinite;
 }
