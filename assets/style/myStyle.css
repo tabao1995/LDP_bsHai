@@ -644,13 +644,14 @@ footer .footer-bottom p {
     right:0
   }
   50% {
-    right:100%
+    right:180%
   }
   0%{
     right: 0;
   }
 }
+
 .try img{
-  animation: sliderrr 10000ms infinite;
+  animation: sliderrr 20000ms infinite;
   position: relative;
 }
