@@ -67,14 +67,14 @@ $(document).ready(function () {
       $(".width50.content1").addClass("block");
       setTimeout(() => {
         $(".width50.content1").css("left", "0");
-      }, 500);
+      }, 200);
     });
     $(".width50 .Invisalign").on("click", function () {
       $(".width50.content").removeClass("block");
       $(".width50.content2").addClass("block");
       setTimeout(() => {
         $(".width50.content2").css("right", "0");
-      }, 500);
+      }, 200);
     });
     $(document).on("click", function (event) {
       if (
@@ -90,7 +90,6 @@ $(document).ready(function () {
 
   let width = $(".width50.img .sure-smile ").width();
   let height = $(".width50.img .sure-smile").height();
-  console.log(height, width);
   $(".width50 .sure-smile").attr(
     "style",
     "clip : rect( 0 ," + width / 2 + "px," + height + "px,0)"
@@ -146,23 +145,40 @@ $(document).ready(function () {
   }
 
   setInterval(updateCountdown, 1000);
-  let a = 0;
-  let c = (1200 - $(window).width()) / 100 + 3;
+  // let a = 0;
+  // let c = (1200 - $(window).width()) / 100 + 3;
 
-  $(".section5_banner__next").on("click", function () {
-    if (-a / 100 <= c) {
-      let b = a - 200;
-      $(".section5_banner__img img").attr("style", "left :" + b + "px");
-      return (a -= 200);
-    } else {
-      console.log(a);
-    }
-  });
-  $(".section5_banner__prev").on("click", function () {
-    if (a < 0) {
-      let b = a + 200;
-      $(".section5_banner__img img").attr("style", "left :" + b + "px");
-      return (a += 200);
-    }
-  });
+  // $(".section5_banner__next").on("click", function () {
+  //   if (-a / 100 <= c) {
+  //     let b = a - 200;
+  //     $(".section5_banner__img img").attr("style", "left :" + b + "px");
+  //     return (a -= 200);
+  //   } else {
+  //     console.log(a);
+  //   }
+  // });
+  // $(".section5_banner__prev").on("click", function () {
+  //   if (a < 0) {
+  //     let b = a + 200;
+  //     $(".section5_banner__img img").attr("style", "left :" + b + "px");
+  //     return (a += 200);
+  //   }
+  // });
+});
+$(window).on("scroll", function () {
+  let c = (1200 - $(window).width()) / 100;
+  let a = c * -150;
+  var scrollPosition = $(window).scrollTop();
+  let imgPosition = $(".section4__lydo__content.content2").offset().top;
+  if (scrollPosition > imgPosition) {
+    $(".section5_banner__img img").attr("style", "left:" + a + "px");
+  } else {
+    $(".section5_banner__img img").attr("style", "left:0px");
+  }
+  let section123option = $(".section11__chungnhan ").offset().top;
+  if (scrollPosition > section123option) {
+    $(".section12__3option__item span ").addClass("animation");
+  } else {
+    $(".section12__3option__item span ").removeClass("animation");
+  }
 });

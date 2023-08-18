@@ -80,7 +80,7 @@ width: 100%;
   .section1 .section1__dangky a {
   padding: 12px 20px;
   border-radius: 12px;
-  background-color: #e3a829;
+  background-color: var(--buttoncolor);
   color: #fff;
   text-decoration: none;
 }
@@ -287,7 +287,7 @@ padding: 0;
   
 }
 .section10 .section >.width50.img img{
-  transition: all 1s ease;
+  transition: all 400ms ease;
 }
 .section10 .section .width50.img .sure-smile{
   
@@ -364,7 +364,9 @@ position: absolute;
 .section13__hinhanh .fullwidth-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap:10px
 }
+
 
 .section13__hinhanh img {
   width: 100%;
@@ -594,7 +596,7 @@ footer .footer-bottom p {
 .section5_banner__img img{
   position: relative;
   left: 0;
-  transition: all 500ms ease;
+  transition: all 10000ms ease;
 }
 .section5_banner__next,.section5_banner__prev{
   display: block;
@@ -629,7 +631,7 @@ footer .footer-bottom p {
   .section10 .section >.width50{
     width: 50%;
     gap:30px;
-    transition:all  1s ease ;
+    transition:all 1s ease ;
   }
   .section10 .section >.width50.content{
     display: none;
@@ -732,14 +734,7 @@ footer .footer-bottom p {
 
   }
 }
-@keyframes sliderrr {
-  100% {
-    right:0
-  }
-  50% {
-    right:180%
-  }
-  0%{
-    right: 0;
-  }
+.animation {
+  animation: puppung 1s ease;
+  display: block;
 }
