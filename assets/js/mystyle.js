@@ -146,4 +146,23 @@ $(document).ready(function () {
   }
 
   setInterval(updateCountdown, 1000);
+  let a = 0;
+  let c = (1200 - $(window).width()) / 100 + 3;
+
+  $(".section5_banner__next").on("click", function () {
+    if (-a / 100 <= c) {
+      let b = a - 200;
+      $(".section5_banner__img img").attr("style", "left :" + b + "px");
+      return (a -= 200);
+    } else {
+      console.log(a);
+    }
+  });
+  $(".section5_banner__prev").on("click", function () {
+    if (a < 0) {
+      let b = a + 200;
+      $(".section5_banner__img img").attr("style", "left :" + b + "px");
+      return (a += 200);
+    }
+  });
 });
