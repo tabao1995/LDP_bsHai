@@ -652,4 +652,5 @@ footer .footer-bottom p {
 }
 .try img{
   animation: sliderrr 10000ms infinite;
+  position: relative;
 }
