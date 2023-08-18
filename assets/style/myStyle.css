@@ -641,13 +641,13 @@ footer .footer-bottom p {
 }
 @keyframes sliderrr {
   100% {
-    left:0
+    right:0
   }
   50% {
-    left:100%
+    right:100%
   }
   0%{
-    left: 0;
+    right: 0;
   }
 }
 .try img{
