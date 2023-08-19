@@ -86,6 +86,12 @@ width: 100%;
 }
 .section1 .section1__call{
   display: none;
+  padding: 14px 16px;  border-radius: 50%;
+
+}
+.section1 .section1__call img{
+  width: 20px;
+  height: 20px;
 }
 .section2 {
   background-image: url(/assets/image/Banner\ web\ 9\ 2.png);
