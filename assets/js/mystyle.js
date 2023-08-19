@@ -166,8 +166,8 @@ $(document).ready(function () {
   // });
 });
 $(window).on("scroll", function () {
-  let c = (1200 - $(window).width()) / 100;
-  let a = c * -150;
+  let c = (1400 - $(window).width()) / 100;
+  let a = c * -100;
   var scrollPosition = $(window).scrollTop();
   let imgPosition = $(".section4__lydo__content.content2").offset().top;
   if (scrollPosition > imgPosition) {

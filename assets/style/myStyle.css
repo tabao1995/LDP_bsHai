@@ -587,7 +587,7 @@ footer .footer-bottom p {
 }
 .section5_banner__img{
   width: 90%;
-  margin: auto;
+  margin: 40px auto;
   overflow: hidden;
 }
 .section5_banner__img > div{
@@ -619,6 +619,9 @@ footer .footer-bottom p {
 .section8_4icon {
   grid-template-columns: 1fr 1fr;
   }
+  .section8_4icon__item img {
+    width: 100px;
+  }
   .section10 .section:nth-child(2){
     padding: 0;
     overflow: hidden;
@@ -645,10 +648,15 @@ footer .footer-bottom p {
   }
   .section11__chungnhan img {
     margin: auto;
+    width: 90%;
   }
 .section12__3option {
   grid-template-columns: 1fr;
   gap:30px;
+}
+
+.section12__3option__item span {
+  font-size: 30px;
 }
 .section13__review__item__top{
   flex-direction: column;
@@ -675,12 +683,18 @@ footer .footer-bottom p {
     padding: 20px;
 
   }
+  .section1 .section1__logo{
+    width: 50%;
+  }
+  .section1 .section1__infor span{
+    font-size: 10px;
+  }
   h2{
     font-size: 16px;
     padding-bottom: 10px;
   }
   footer .footer-top .section-withlogo , footer .footer-top .section-withoutlogo  {
-    width: 1000%;
+    width: 100%;
     padding: 10px  0;
   }
   .section3__content__item img{
