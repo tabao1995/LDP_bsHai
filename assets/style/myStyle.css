@@ -290,20 +290,22 @@ padding: 0;
 }
 .section10 .section >.width50.img{
   position: relative;
+  aspect-ratio: 1/1;
   
 }
 .section10 .section >.width50.img img{
   transition: all 400ms ease;
 }
-.section10 .section .width50.img .sure-smile{
-  
-}
+
 .section10 .section >.width50 .sure-smile {
 width:100%;
 top: 0  ;
 right: 0;
 position: absolute;
 
+}
+.section10 .section >.width50 div .Invisalign {
+width: 100%;
 }
 .section12 {
   background-color: var(--bluecolor);
