@@ -431,7 +431,7 @@ position: absolute;
 .section15__form form{
 
 }
-.section15__form form input {
+.section15__form form input,.section15__form form select {
   padding: 10px  ;
   margin: 12px 0  ;
   outline: none;
