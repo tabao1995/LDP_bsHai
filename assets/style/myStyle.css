@@ -735,6 +735,9 @@ footer .footer-bottom p {
   .block{
     display: block!important;
   }
+  .section15 {
+  background-image: url("/assets/image/BG\ \(1\).png");
+  }
   .section15__form.width50 {
     width: 90%;
     margin: auto;
